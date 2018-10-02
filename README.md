@@ -10,11 +10,12 @@ Project DeepSpeech is an open source Speech-To-Text engine, using a model traine
 
 - [Prerequisites](#prerequisites)
 - [Installing requisites](#installing-requisites)
-- [Using the Quechua model without server](#using-the-model)
+- [Using the Quechua model without server](#using-the-quechua-model-without-server)
   - [Using the language model](#using-the-language-model)
   - [Using no the language model](#using-no-the-language-model)
+- [Run Qillqaq Server](#run-qillqaq-server)
 - [Code documentation](#code-documentation)
-- [Contact/Getting Help](#contactgetting-help)
+- [Contact](#contactg)
 
 ## Prerequisites
 
@@ -95,29 +96,27 @@ deepspeech --model output_graph.pb --alphabet quz_alphabet.txt --audio hatispa.w
 ```
 
 
-### Recommendations
-
-If you have a capable (Nvidia, at least 8GB of VRAM) GPU, it is highly recommended to install TensorFlow with GPU support. Training will likely be significantly quicker than using the CPU. To enable GPU support, you can do:
+## Run Qillqaq Server
 
 ```bash
-pip uninstall tensorflow
-pip install 'tensorflow-gpu==1.5.0'
+cd Qillqaq
+python server.py
 ```
 
+### Recommendations
+
+You server has to be ubuntu 16.04 LTS, 16GB RAM, 125GB SSD.
+
+In server.py can change the root where audio files are saving.
 
 
 ## Code documentation
 
-Documentation (incomplete) for the code can be found here: http://deepspeech.readthedocs.io/en/latest/
+Documentation (incomplete) for the code can be found here: https://docs.google.com/document/d/1nOP5HCoASVtoykoC3LNMzKZEPyz-cU86YubEAo4COxw/edit
 
-## Contact/Getting Help
+## Contact
 
-There are several ways to contact us or to get help:
+We are always happy to hear from you:
 
-1. [**FAQ**](https://github.com/mozilla/DeepSpeech/wiki#frequently-asked-questions) - We have a list of common questions, and their answers, in our [FAQ](https://github.com/mozilla/DeepSpeech/wiki#frequently-asked-questions). When just getting started, it's best to first check the [FAQ](https://github.com/mozilla/DeepSpeech/wiki#frequently-asked-questions) to see if your question is addressed.
-
-2. [**Discourse Forums**](https://discourse.mozilla.org/c/deep-speech) - If your question is not addressed in the [FAQ](https://github.com/mozilla/DeepSpeech/wiki#frequently-asked-questions), the [Discourse Forums](https://discourse.mozilla.org/c/deep-speech) is the next place to look. They contain conversations on [General Topics](https://discourse.mozilla.org/t/general-topics/21075), [Using Deep Speech](https://discourse.mozilla.org/t/using-deep-speech/21076/4), and [Deep Speech Development](https://discourse.mozilla.org/t/deep-speech-development/21077).
-
-3. [**IRC**](https://wiki.mozilla.org/IRC) - If your question is not addressed by either the [FAQ](https://github.com/mozilla/DeepSpeech/wiki#frequently-asked-questions) or [Discourse Forums](https://discourse.mozilla.org/c/deep-speech), you can contact us on the `#machinelearning` channel on [Mozilla IRC](https://wiki.mozilla.org/IRC); people there can try to answer/help
-
-4. [**Issues**](https://github.com/mozilla/deepspeech/issues) - Finally, if all else fails, you can open an issue in our repo.
+rjzevallos.salazar@gmail.com 
+camacho.l@pucp.pe
