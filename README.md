@@ -14,8 +14,9 @@ Project DeepSpeech is an open source Speech-To-Text engine, using a model traine
   - [Using the language model](#using-the-language-model)
   - [Using no the language model](#using-no-the-language-model)
 - [Run Qillqaq Server](#run-qillqaq-server)
+- [Recommendations](#recommendations)
 - [Code documentation](#code-documentation)
-- [Contact](#contactg)
+- [Contact](#contact)
 
 ## Prerequisites
 
@@ -103,7 +104,7 @@ cd Qillqaq
 python server.py
 ```
 
-### Recommendations
+## Recommendations
 
 You server has to be ubuntu 16.04 LTS, 16GB RAM, 125GB SSD.
 
