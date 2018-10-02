@@ -8,6 +8,7 @@
 - [Prerequisites](#prerequisites)
 - [Installing requisites](#installing-requisites)
 - [Using the Quechua model without server](#using-the-quechua-model-without-server)
+  - [Getting the trained model](#getting-the-trained-model)
   - [Using the language model](#using-the-language-model)
   - [Using no the language model](#using-no-the-language-model)
 - [Run Qillqaq Server](#run-qillqaq-server)
@@ -79,6 +80,16 @@ There are two ways to use DeepSpeech inference:
 
 ```bash
 cd QillqaqServer
+```
+
+### Getting the trained model
+
+You have to download the trained Quechua model for performing speech-to-text, also you can download it (along with other important inference material) from the QillqaqServer releases page. Alternatively, you can run the following command to download and unzip the files in your current directory:
+
+```bash
+sudo wget -O - https://github.com/rjzevallos/QillqaqServer/releases/download/v0.01/5-gram.binary
+sudo wget -O - https://github.com/rjzevallos/QillqaqServer/releases/download/v0.01/output_graph.pb
+sudo wget -O - https://github.com/rjzevallos/QillqaqServer/releases/download/v0.01/quz_trie
 ```
 
 ### Using the language model
