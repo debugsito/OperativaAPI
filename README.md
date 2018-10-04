@@ -28,7 +28,7 @@ You need to update the system:
 
 ```bash
 sudo apt-get update
-sudo apt-get grade
+sudo apt-get upgrade
 ```
 
 Now you need to install pip:
