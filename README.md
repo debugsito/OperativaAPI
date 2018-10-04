@@ -3,12 +3,16 @@
 [![Documentation Status](https://readthedocs.org/projects/deepspeech/badge/?version=master)](http://deepspeech.readthedocs.io/?badge=master)
 [![Task Status](https://github.taskcluster.net/v1/repository/mozilla/DeepSpeech/master/badge.svg)](https://github.taskcluster.net/v1/repository/mozilla/DeepSpeech/master/latest)
 
+
+QillqaqServer is a server that process a Speech-To-Text engine, using a model trained by machine learning techniques. The server can be used to connect in apps, webs or others applications.
+
+
 **Table of Contents**
 
 - [Prerequisites](#prerequisites)
 - [Installing requisites](#installing-requisites)
-- [Using the Quechua model without server](#using-the-quechua-model-without-server)
-  - [Getting the trained model](#getting-the-trained-model)
+- [Getting the trained model](#getting-the-trained-model)
+- [Using the Quechua model](#using-the-quechua-model)
   - [Using the language model](#using-the-language-model)
   - [Using no the language model](#using-no-the-language-model)
 - [Run Qillqaq Server](#run-qillqaq-server)
@@ -20,7 +24,6 @@
 
 * [Python 2.7](https://www.python.org/)
 * [SOX](http://sox.sourceforge.net/)
-* [DeepSpeech](https://github.com/mozilla/DeepSpeech/blob/2f9b551326f63db11b0f1533e8ce88ef5e3cf305/README.md#project-deepspeech)
 
 ## Installing requisites
 
@@ -73,6 +76,15 @@ use app_quechua;
 source ../QillqaqServer/app_quechua.sql;
 ```
 
+## Getting the trained model
+
+You have to download the trained Quechua model for performing speech-to-text, also you can download it (along with other important inference material) from the QillqaqServer releases page. Alternatively, you can run the following command to download the files in your current directory:
+
+```bash
+sudo wget -O - https://github.com/rjzevallos/QillqaqServer/releases/download/v0.01/5-gram.binary
+sudo wget -O - https://github.com/rjzevallos/QillqaqServer/releases/download/v0.01/output_graph.pb
+sudo wget -O - https://github.com/rjzevallos/QillqaqServer/releases/download/v0.01/quz_trie
+```
 
 ## Using the Quechua model without server
 
@@ -82,15 +94,7 @@ There are two ways to use DeepSpeech inference:
 cd QillqaqServer
 ```
 
-### Getting the trained model
 
-You have to download the trained Quechua model for performing speech-to-text, also you can download it (along with other important inference material) from the QillqaqServer releases page. Alternatively, you can run the following command to download and unzip the files in your current directory:
-
-```bash
-sudo wget -O - https://github.com/rjzevallos/QillqaqServer/releases/download/v0.01/5-gram.binary
-sudo wget -O - https://github.com/rjzevallos/QillqaqServer/releases/download/v0.01/output_graph.pb
-sudo wget -O - https://github.com/rjzevallos/QillqaqServer/releases/download/v0.01/quz_trie
-```
 
 ### Using the language model
 
@@ -109,7 +113,7 @@ deepspeech --model output_graph.pb --alphabet quz_alphabet.txt --audio hatispa.w
 
 ```bash
 cd Qillqaq
-python server.py
+python service.py
 ```
 
 ## Recommendations
