@@ -1,11 +1,10 @@
-# Qillqaq Server
+# Siminchik Server
 
 [![Documentation Status](https://readthedocs.org/projects/deepspeech/badge/?version=master)](http://deepspeech.readthedocs.io/?badge=master)
 [![Task Status](https://github.taskcluster.net/v1/repository/mozilla/DeepSpeech/master/badge.svg)](https://github.taskcluster.net/v1/repository/mozilla/DeepSpeech/master/latest)
 
 
-QillqaqServer is a server that process a Speech-To-Text engine, using a model trained by machine learning techniques. The server can be used to connect in apps, webs or others applications.
-
+SiminchikServer is a server that processes a Speech-To-Text engine (Qillqaq), using a model trained by machine learning techniques, it also store and processes audio files collected (Huqariq). The server can be used to connect to apps, websites or others applications.
 
 **Table of Contents**
 
