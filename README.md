@@ -52,6 +52,11 @@ Install python-mysql:
 sudo apt-get install python-mysqldb
 ```
 
+Install ffmpeg:
+
+```bash
+sudo apt-get install ffmpeg
+```
 
 Now, You have to install mysql, create a database and run .sql script.
 
