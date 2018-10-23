@@ -42,7 +42,8 @@ sudo apt-get install python-pip
 Install the required dependencies using pip:
 
 ```bash
-cd QillqaqServer
+sudo git clone https://github.com/rjzevallos/SiminchikServer
+cd SiminchikServer
 sudo pip install -r requirements.txt
 ```
 
