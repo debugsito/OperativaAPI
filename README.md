@@ -104,7 +104,7 @@ cd QillqaqServer
 ### Using the language model
 
 ```bash
-deepspeech --model output_graph.pbmm --alphabet quz_alphabet.txt --lm 5-gram.binary --trie quz_trie --audio hatispa.wav
+deepspeech --model output_graph.pb --alphabet quz_alphabet.txt --lm 5-gram.binary --trie quz_trie --audio hatispa.wav
 ```
 
 ### Using no the language model
