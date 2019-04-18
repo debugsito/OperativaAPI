@@ -15,6 +15,8 @@ SiminchikServer is a server that processes a Speech-To-Text engine (Qillqaq), us
   - [Using the language model](#using-the-language-model)
   - [Using no the language model](#using-no-the-language-model)
 - [Run Qillqaq Server](#run-qillqaq-server)
+  - [Local o Dev Server](#local_o_dev_server)
+  - [Production Server](#production_server)
 - [Recommendations](#recommendations)
 - [Code documentation](#code-documentation)
 - [Contact](#contact)
