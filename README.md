@@ -41,7 +41,7 @@ sudo apt-get install python-pip
 
 Install the required dependencies using pip:
 
-```bash
+```
 sudo git clone https://github.com/rjzevallos/SiminchikServer
 cd SiminchikServer
 sudo pip install -r requirements.txt
@@ -75,7 +75,7 @@ sudo mysql -p
 
 Commands sql:
 
-```bash
+```
 create database app_quechua;
 use app_quechua;
 source ../QillqaqServer/app_quechua.sql;
@@ -95,7 +95,7 @@ sudo wget https://github.com/rjzevallos/QillqaqServer/releases/download/v0.01/qu
 
 There are two ways to use DeepSpeech inference:
 
-```bash
+```
 cd QillqaqServer
 ```
 
@@ -118,7 +118,7 @@ deepspeech --model output_graph.pb --alphabet quz_alphabet.txt --audio hatispa.w
 
 ### Local o Dev Server
 
-```bash
+```
 cd Qillqaq
 python service.py
 ```
@@ -245,5 +245,5 @@ Documentation (incomplete) for the code can be found here: https://docs.google.c
 
 We are always happy to hear from you:
 
-rjzevallos.salazar@gmail.com 
-camacho.l@pucp.pe
+* Rodolfo Zevallos rjzevallos.salazar@gmail.com 
+* Luis Camacho camacho.l@pucp.pe
