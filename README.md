@@ -127,11 +127,11 @@ python service.py
 
 We must install:
 
-*Gunicorn : deploy flask app.
-*Nginx : proxy inverso.
-*Supervisor : monitor and control gunicorn process.
+* Gunicorn : deploy flask app.
+* Nginx : proxy inverso.
+* Supervisor : monitor and control gunicorn process.
 
-Install Gunicorn:
+#### Install Gunicorn:
 
 ```bash
 sudo pip install gunicorn
@@ -143,7 +143,7 @@ In order to run several processes simultaneously it is necessary to specify the 
 gunicorn -w 8  myproyect:app -b 0.0.0:5000
 ```
 
-Install Nginx:
+#### Install Nginx:
 
 ```bash
 sudo apt-get update
@@ -209,7 +209,7 @@ Finally, save the file and restart Nginx
 sudo systemctl restart nginx
 ```
 
-Install Supervisor:
+#### Install Supervisor:
 
 To configure Supervisor go to the path /etc/supervisor/ and create a conf.d folder, then create a file with extension .conf, finally add what is detailed below.
 
