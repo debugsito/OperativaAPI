@@ -156,7 +156,7 @@ After installing Nginx go to the path /etc/nginx/sites-enabled/ , add a document
 sudo vim /etc/nginx/sites-enabled/virtual.conf
 ```
 
-```bash
+```
 server {
     listen 80;
     server_name  your_public_dnsname_here;
@@ -174,7 +174,7 @@ server {
 
 OPTIONAL: In this part make sure to place the route of the FULLCHAIN.PEM and PRIVKEY.PEM only if a certificate has been generated, in this case before the configuration a certificate was generated thanks to LET´S ENCRYPT, for more information go to the following link https://letsencrypt.org/
 
-```bash
+```
 server {
     # listen on port 443 (https)
     listen  443 ssl;
@@ -213,7 +213,7 @@ sudo systemctl restart nginx
 
 To configure Supervisor go to the path /etc/supervisor/ and create a conf.d folder, then create a file with extension .conf, finally add what is detailed below.
 
-```bash
+```
 [program:proyect]
 directory=/home/ubuntu/proyect
 command=gunicorn -w 8 service:app -b 0.0.0:5000
