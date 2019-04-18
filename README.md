@@ -140,7 +140,7 @@ sudo pip install gunicorn
 In order to run several processes simultaneously it is necessary to specify the workers, each of the workers is a Unix process that loads the Python application. There is no shared memory between the workers. The suggested number of workers is (2*CPU)+1. For a dual-core machine (2 CPU), 5 is the suggested value workers. In this case 8 workers are being placed.
 
 ```bash
-gunicorn -w 8  myproyect:app -b 0.0.0:5000
+gunicorn -w 8  service:app -b 0.0.0:5000
 ```
 
 #### Install Nginx:
@@ -216,7 +216,7 @@ To configure Supervisor go to the path /etc/supervisor/ and create a conf.d fold
 ```bash
 [program:proyect]
 directory=/home/ubuntu/proyect
-command=gunicorn -w 8  myproyect:app -b 0.0.0:5000
+command=gunicorn -w 8 service:app -b 0.0.0:5000
 autostart=true
 autorestart=true
 stderr_logfile=/var/log/proyect/proyect.err.log
