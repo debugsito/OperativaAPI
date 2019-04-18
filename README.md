@@ -116,9 +116,118 @@ deepspeech --model output_graph.pb --alphabet quz_alphabet.txt --audio hatispa.w
 
 ## Run Qillqaq Server
 
+### Local o Dev Server
+
 ```bash
 cd Qillqaq
 python service.py
+```
+
+### Production Server
+
+We must install:
+
+*Gunicorn : deploy flask app.
+*Nginx : proxy inverso.
+*Supervisor : monitor and control gunicorn process.
+
+Install Gunicorn:
+
+```bash
+sudo pip install gunicorn
+```
+
+In order to run several processes simultaneously it is necessary to specify the workers, each of the workers is a Unix process that loads the Python application. There is no shared memory between the workers. The suggested number of workers is (2*CPU)+1. For a dual-core machine (2 CPU), 5 is the suggested value workers. In this case 8 workers are being placed.
+
+```bash
+gunicorn -w 8  myproyect:app -b 0.0.0:5000
+```
+
+Install Nginx:
+
+```bash
+sudo apt-get update
+sudo apt-get install nginx
+```
+
+After installing Nginx go to the path /etc/nginx/sites-enabled/ , add a document having the following
+
+```bash
+sudo vim /etc/nginx/sites-enabled/virtual.conf
+```
+
+```bash
+server {
+    listen 80;
+    server_name  your_public_dnsname_here;
+    
+    # write access and error logs to /var/log
+    access_log /var/log/proyect_access.log;
+    error_log /var/log/proyect_error.log;
+    
+    location / {
+        # forward application requests to the gunicorn server
+        proxy_pass http://0.0.0.0:5000/;
+    }
+}
+```
+
+OPTIONAL: In this part make sure to place the route of the FULLCHAIN.PEM and PRIVKEY.PEM only if a certificate has been generated, in this case before the configuration a certificate was generated thanks to LET´S ENCRYPT, for more information go to the following link https://letsencrypt.org/
+
+```bash
+server {
+    # listen on port 443 (https)
+    listen  443 ssl;
+    server_name _;
+
+    # location of the self-signed SSL certificate
+    ssl_certificate /etc/letsencrypt/live/www.pucp.tk/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/www.pucp.tk/privkey.pem;
+
+    include snippets/ssl.conf;
+    include snippets/letsencrypt.conf;
+
+    # write access and error logs to /var/log
+    access_log /var/log/proyect_access.log;
+    error_log /var/log/proyect_error.log;
+
+    location / {
+        # forward application requests to the gunicorn server
+        proxy_pass http://0.0.0.0:5000/;
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+
+}
+```
+
+Finally, save the file and restart Nginx
+
+```bash
+sudo systemctl restart nginx
+```
+
+Install Supervisor:
+
+To configure Supervisor go to the path /etc/supervisor/ and create a conf.d folder, then create a file with extension .conf, finally add what is detailed below.
+
+```bash
+[program:proyect]
+directory=/home/ubuntu/proyect
+command=gunicorn -w 8  myproyect:app -b 0.0.0:5000
+autostart=true
+autorestart=true
+stderr_logfile=/var/log/proyect/proyect.err.log
+stdout_logfile=/var/log/proyect/proyect.out.log
+```
+
+Enable configuration, run the following commands:
+
+```bash
+sudo supervisorctl reread
+sudo service supervisor restart
 ```
 
 ## Recommendations
