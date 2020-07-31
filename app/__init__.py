@@ -1,17 +1,22 @@
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-from flask_bcrypt import Bcrypt
+from flask_restx import Api
+from flask import Blueprint
 
-from config import config_by_name
+from .main.controller.user_controller import api as user_ns
+from .main.controller.auth_controller import api as auth_ns
+from .main.controller.transcription_controller import api as trans_ns
+from .main.controller.locate_controller import api_CountryDto, api_CityDto, api_StateDto
 
-db = SQLAlchemy()
-flask_bcrypt = Bcrypt()
+blueprint = Blueprint('api', __name__)
 
+api = Api(blueprint,
+          title='Siminchik API',
+          version='1.0',
+          description='This API is a linguistic tools for quechua, aymara and some native languages from America.'
+          )
 
-def create_app(config_name):
-    app = Flask(__name__)
-    app.config.from_object(config_by_name[config_name])
-    db.init_app(app)
-    flask_bcrypt.init_app(app)
-
-    return app
+api.add_namespace(user_ns, path='/user')
+api.add_namespace(trans_ns, path='/transcription')
+api.add_namespace(auth_ns)
+api.add_namespace(api_CountryDto, path='/country')
+api.add_namespace(api_StateDto, path='/state')
+api.add_namespace(api_CityDto, path='/city')
