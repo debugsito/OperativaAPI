@@ -7,12 +7,12 @@ clean:
 	find . -type f -name '*.log' -delete
 
 install:
-	pip install -r requirements.txt;
+	pip3 install -r requirements.txt;
 
 tests:
-	python manage.py test
+	python3 manage.py test
 
 run:
-	python manage.py run
+	python3 manage.py run
 
 all: clean install tests run

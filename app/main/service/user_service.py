@@ -11,15 +11,15 @@ def save_new_user(data):
         new_user = User(
             email=data['email'],
             password=data['password'],
-			first_name=data['first_name'],
-			middle_name=data['middle_name'],
-			last_name=data['last_name'],
-			type_doc=data['type_doc'],
-			num_doc=data['num_doc'],
-			id_country=data['id_country'],
-			id_state=data['id_state'],
-			id_city=data['id_city'],
-            registered_on=datetime.datetime.utcnow()
+			#first_name=data['first_name'],
+			#middle_name=data['middle_name'],
+			#last_name=data['last_name'],
+			#type_doc=data['type_doc'],
+			#num_doc=data['num_doc'],
+			#id_country=data['id_country'],
+			#id_state=data['id_state'],
+			#id_city=data['id_city'],
+            #registered_on=datetime.datetime.utcnow()
         )
         save_changes(new_user)
         return generate_token(new_user)

@@ -1,0 +1,884 @@
+python3 manage.py run
+ * Serving Flask app "app.main" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 580-507-755
+62.57.100.217 - - [17/Sep/2020 14:39:10] "GET /auth/login HTTP/1.1" 405 -
+62.57.100.217 - - [17/Sep/2020 14:39:11] "GET /favicon.ico HTTP/1.1" 404 -
+62.57.100.217 - - [17/Sep/2020 14:39:12] "GET /auth/login HTTP/1.1" 405 -
+62.57.100.217 - - [17/Sep/2020 14:39:15] "GET /auth/login HTTP/1.1" 405 -
+62.57.100.217 - - [17/Sep/2020 14:39:20] "GET / HTTP/1.1" 200 -
+62.57.100.217 - - [17/Sep/2020 14:39:21] "GET /swagger.json HTTP/1.1" 200 -
+62.57.100.217 - - [17/Sep/2020 14:39:23] "GET / HTTP/1.1" 200 -
+62.57.100.217 - - [17/Sep/2020 14:39:23] "GET /swagger.json HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 14:39:29] "GET /user/ HTTP/1.1" 401 -
+190.113.208.63 - - [17/Sep/2020 14:40:40] "GET / HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 14:40:41] "GET /swagger.json HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 14:40:41] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 14:49:31] "POST /user/ HTTP/1.1" 201 -
+190.113.208.63 - - [17/Sep/2020 14:49:55] "GET /user/ HTTP/1.1" 401 -
+190.113.208.63 - - [17/Sep/2020 14:50:33] "GET /user/ HTTP/1.1" 401 -
+190.113.208.63 - - [17/Sep/2020 14:50:42] "GET /user/ HTTP/1.1" 401 -
+190.113.208.63 - - [17/Sep/2020 14:50:57] "GET /user/pep%40gmail.com HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 14:53:23] "GET /user/ HTTP/1.1" 401 -
+190.113.208.63 - - [17/Sep/2020 14:53:37] "GET /user/ HTTP/1.1" 401 -
+190.113.208.63 - - [17/Sep/2020 14:54:11] "POST /auth/login HTTP/1.1" 401 -
+190.113.208.63 - - [17/Sep/2020 14:54:23] "POST /auth/login HTTP/1.1" 401 -
+190.113.208.63 - - [17/Sep/2020 14:54:31] "POST /auth/login HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 14:54:43] "POST /auth/logout HTTP/1.1" 403 -
+62.57.100.217 - - [17/Sep/2020 14:54:44] "GET / HTTP/1.1" 200 -
+62.57.100.217 - - [17/Sep/2020 14:54:44] "GET /swagger.json HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 14:55:31] "GET / HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 14:55:32] "GET /swagger.json HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 16:02:06] "GET / HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 16:02:06] "GET /swagger.json HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 16:02:22] "GET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 16:02:22] "GET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 16:02:22] "GET /swaggerui/swagger-ui.css.map HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 17:40:20] "POST /auth/login HTTP/1.1" 401 -
+190.113.208.63 - - [17/Sep/2020 17:40:38] "POST /auth/login HTTP/1.1" 401 -
+190.113.208.63 - - [17/Sep/2020 17:41:12] "GET /auth/login HTTP/1.1" 405 -
+190.113.208.63 - - [17/Sep/2020 17:41:20] "POST /auth/login HTTP/1.1" 401 -
+190.113.208.63 - - [17/Sep/2020 17:41:27] "GET / HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 17:41:28] "GET /swagger.json HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 17:41:28] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 17:41:47] "POST /auth/login HTTP/1.1" 401 -
+190.113.208.63 - - [17/Sep/2020 17:42:09] "POST /auth/login HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 17:43:45] "GET /user/pep%40gmail.com HTTP/1.1" 200 -
+179.6.207.73 - - [17/Sep/2020 19:00:36] "GET / HTTP/1.1" 200 -
+179.6.207.73 - - [17/Sep/2020 19:00:37] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+179.6.207.73 - - [17/Sep/2020 19:00:37] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+179.6.207.73 - - [17/Sep/2020 19:00:37] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+179.6.207.73 - - [17/Sep/2020 19:00:37] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+179.6.207.73 - - [17/Sep/2020 19:00:38] "GET /swagger.json HTTP/1.1" 200 -
+179.6.207.73 - - [17/Sep/2020 19:00:38] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+179.6.207.73 - - [17/Sep/2020 19:01:57] "GET /swagger.json HTTP/1.1" 200 -
+179.6.207.73 - - [17/Sep/2020 19:01:57] "GET /favicon.ico HTTP/1.1" 404 -
+179.6.207.73 - - [17/Sep/2020 19:06:41] "GET /country/ HTTP/1.1" 200 -
+179.6.207.73 - - [17/Sep/2020 19:36:07] "POST /swagger.json/auth/login HTTP/1.1" 404 -
+179.6.207.73 - - [17/Sep/2020 19:36:27] "POST /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [17/Sep/2020 19:39:34] "GET /user/ HTTP/1.1" 401 -
+179.6.207.73 - - [17/Sep/2020 19:40:29] "POST /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [17/Sep/2020 19:40:45] "GET /user/ HTTP/1.1" 401 -
+179.6.207.73 - - [17/Sep/2020 19:41:06] "GET /user/ HTTP/1.1" 401 -
+190.113.208.63 - - [17/Sep/2020 19:41:23] "GET / HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 19:41:23] "GET /swagger.json HTTP/1.1" 200 -
+190.113.208.63 - - [17/Sep/2020 19:41:24] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+179.6.207.73 - - [17/Sep/2020 19:41:48] "GET /user/ HTTP/1.1" 401 -
+179.6.207.73 - - [17/Sep/2020 19:43:04] "GET /user/ HTTP/1.1" 401 -
+179.6.207.73 - - [17/Sep/2020 19:46:17] "POST /auth/login HTTP/1.1" 401 -
+179.6.207.73 - - [17/Sep/2020 19:46:26] "POST /auth/login HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/operativa/OperativaAPI/app/main/model/user.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 580-507-755
+ * Detected change in '/home/ubuntu/operativa/OperativaAPI/app/main/service/user_service.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 580-507-755
+ * Detected change in '/home/ubuntu/operativa/OperativaAPI/app/main/util/dto.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/ubuntu/operativa/OperativaAPI/manage.py", line 7, in <module>
+    from app import blueprint
+  File "/home/ubuntu/operativa/OperativaAPI/app/__init__.py", line 4, in <module>
+    from .main.controller.user_controller import api as user_ns
+  File "/home/ubuntu/operativa/OperativaAPI/app/main/controller/user_controller.py", line 5, in <module>
+    from ..util.dto import UserDto
+  File "/home/ubuntu/operativa/OperativaAPI/app/main/util/dto.py", line 17
+    'registered_on': fields.DateTime(required=True, description='user registered_on')"""
+                                                                                       ^
+SyntaxError: invalid syntax
+Makefile:16: recipe for target 'run' failed
+make: *** [run] Error 1
+python3 manage.py run
+ * Serving Flask app "app.main" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 580-507-755
+62.57.56.91 - - [18/Sep/2020 12:11:03] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [18/Sep/2020 12:11:04] "GET /swagger.json HTTP/1.1" 200 -
+62.57.56.91 - - [18/Sep/2020 12:11:05] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [18/Sep/2020 12:11:05] "GET /swagger.json HTTP/1.1" 200 -
+62.57.56.91 - - [18/Sep/2020 12:11:06] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [18/Sep/2020 12:11:06] "GET /swagger.json HTTP/1.1" 200 -
+179.6.207.73 - - [18/Sep/2020 13:23:00] "GET / HTTP/1.1" 200 -
+179.6.207.73 - - [18/Sep/2020 13:23:01] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+179.6.207.73 - - [18/Sep/2020 13:23:01] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+179.6.207.73 - - [18/Sep/2020 13:23:01] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+179.6.207.73 - - [18/Sep/2020 13:23:01] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+179.6.207.73 - - [18/Sep/2020 13:23:02] "GET /swagger.json HTTP/1.1" 200 -
+179.6.207.73 - - [18/Sep/2020 13:23:03] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 -
+179.6.207.73 - - [18/Sep/2020 13:45:54] "OPTIONS /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [18/Sep/2020 13:49:27] "POST /auth/login HTTP/1.1" 401 -
+179.6.207.73 - - [18/Sep/2020 14:00:17] "OPTIONS /auth/login HTTP/1.1" 200 -
+190.113.211.102 - - [18/Sep/2020 15:15:43] "GET / HTTP/1.1" 200 -
+190.113.211.102 - - [18/Sep/2020 15:15:43] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+190.113.211.102 - - [18/Sep/2020 15:15:43] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 -
+190.113.211.102 - - [18/Sep/2020 15:15:43] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 -
+190.113.211.102 - - [18/Sep/2020 15:15:43] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+190.113.211.102 - - [18/Sep/2020 15:15:44] "GET /swagger.json HTTP/1.1" 200 -
+190.113.211.102 - - [18/Sep/2020 15:18:20] "GET /user/ HTTP/1.1" 401 -
+190.113.211.102 - - [18/Sep/2020 15:18:49] "POST /user/ HTTP/1.1" 201 -
+190.113.211.102 - - [18/Sep/2020 15:19:04] "GET /user/pep%40gmail.com HTTP/1.1" 200 -
+190.113.211.102 - - [18/Sep/2020 15:42:30] "POST /auth/login HTTP/1.1" 200 -
+62.57.56.91 - - [18/Sep/2020 16:11:48] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [18/Sep/2020 16:11:48] "GET /swagger.json HTTP/1.1" 200 -
+62.57.56.91 - - [18/Sep/2020 16:14:59] "GET /swagger.json HTTP/1.1" 200 -
+62.57.56.91 - - [18/Sep/2020 16:37:59] "GET /swagger.json HTTP/1.1" 200 -
+62.57.56.91 - - [18/Sep/2020 17:30:32] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [18/Sep/2020 17:30:32] "GET /swagger.json HTTP/1.1" 200 -
+190.113.211.102 - - [18/Sep/2020 17:49:38] "GET / HTTP/1.1" 200 -
+190.113.211.102 - - [18/Sep/2020 17:49:39] "GET /swagger.json HTTP/1.1" 200 -
+190.113.211.102 - - [18/Sep/2020 17:49:39] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+190.113.211.102 - - [18/Sep/2020 19:49:06] "GET /user/ HTTP/1.1" 401 -
+190.113.211.102 - - [18/Sep/2020 19:49:16] "GET /user/ HTTP/1.1" 401 -
+179.6.207.73 - - [18/Sep/2020 20:39:59] "OPTIONS /auth/login HTTP/1.1" 200 -
+190.113.211.102 - - [18/Sep/2020 20:41:56] "GET / HTTP/1.1" 200 -
+190.113.211.102 - - [18/Sep/2020 20:41:59] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+190.113.211.102 - - [18/Sep/2020 20:41:59] "GET /swagger.json HTTP/1.1" 200 -
+209.17.97.98 - - [19/Sep/2020 00:42:05] "GET / HTTP/1.0" 200 -
+190.113.209.112 - - [19/Sep/2020 02:56:59] "GET / HTTP/1.1" 200 -
+190.113.209.112 - - [19/Sep/2020 02:56:59] "GET /swagger.json HTTP/1.1" 200 -
+190.113.209.112 - - [19/Sep/2020 02:57:00] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+209.17.96.66 - - [19/Sep/2020 03:46:26] "GET / HTTP/1.1" 200 -
+185.202.2.132 - - [19/Sep/2020 05:39:53] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.202.2.132 - - [19/Sep/2020 05:39:53] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+185.202.2.132 - - [19/Sep/2020 05:55:36] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.202.2.132 - - [19/Sep/2020 05:55:36] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+62.57.56.91 - - [19/Sep/2020 08:08:17] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+62.57.56.91 - - [19/Sep/2020 08:08:17] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 -
+62.57.56.91 - - [19/Sep/2020 08:08:17] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 -
+62.57.56.91 - - [19/Sep/2020 08:08:20] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+62.57.56.91 - - [19/Sep/2020 08:08:20] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [19/Sep/2020 08:08:20] "GET /swagger.json HTTP/1.1" 200 -
+162.142.125.49 - - [19/Sep/2020 08:22:37] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03<¸µ"¸c¯\x8bö¹\x00)³J\x94ÉìÆ\x99e¹\x89eH\x98,l\x9a\x05g&\x02\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+162.142.125.49 - - [19/Sep/2020 08:22:37] " {  w<¸µ"¸c¯ö¹ )³JÉìÆe¹eH,lg&  À/À+ÀÀÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+162.142.125.49 - - [19/Sep/2020 08:22:38] "GET / HTTP/1.1" 200 -
+162.142.125.49 - - [19/Sep/2020 08:22:38] "GET / HTTP/1.1" 200 -
+92.118.160.25 - - [19/Sep/2020 10:52:46] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [19/Sep/2020 13:06:07] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [19/Sep/2020 13:06:07] "GET /swagger.json HTTP/1.1" 200 -
+106.75.211.111 - - [19/Sep/2020 15:41:15] "GET http://www.qq.com/404/search_children.js HTTP/1.1" 404 -
+106.75.211.111 - - [19/Sep/2020 15:41:24] code 400, message Bad request syntax ('\x05\x01\x00')
+106.75.211.111 - - [19/Sep/2020 15:41:24] " " HTTPStatus.BAD_REQUEST -
+106.75.211.111 - - [19/Sep/2020 15:41:24] code 400, message Bad request syntax ('\x04\x01\x00PpTi4\x00')
+106.75.211.111 - - [19/Sep/2020 15:41:24] " PpTi4 " HTTPStatus.BAD_REQUEST -
+106.75.211.111 - - [19/Sep/2020 15:41:24] code 400, message Bad request syntax ('\x00\x9c\x00\x01\x1a+<M\x00\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x03ÿÿ\x00\x01local\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00cananian\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+106.75.211.111 - - [19/Sep/2020 15:41:24] "  +<M            ÿÿ local                                                           cananian                                                        " HTTPStatus.BAD_REQUEST -
+92.118.161.13 - - [19/Sep/2020 15:53:36] "GET / HTTP/1.0" 200 -
+190.113.210.223 - - [19/Sep/2020 18:35:11] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 -
+190.113.210.223 - - [19/Sep/2020 18:35:11] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+190.113.210.223 - - [19/Sep/2020 18:35:11] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 -
+190.113.210.223 - - [19/Sep/2020 18:35:11] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+190.113.210.223 - - [19/Sep/2020 18:35:12] "GET /swagger.json HTTP/1.1" 200 -
+209.17.96.170 - - [19/Sep/2020 19:49:02] "GET / HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 19:53:53] "GET / HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 19:53:53] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 19:53:53] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 19:53:53] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 19:53:53] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 19:53:56] "GET /swagger.json HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 19:53:56] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 19:55:50] "GET / HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 19:56:24] "POST / HTTP/1.1" 405 -
+179.6.207.73 - - [19/Sep/2020 19:57:47] "POST / HTTP/1.1" 405 -
+179.6.207.73 - - [19/Sep/2020 19:58:06] "GET / HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 19:58:06] "GET /swagger.json HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 19:58:46] "POST /user/ HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 19:58:54] "POST /user HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_restx/api.py", line 639, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_restx/api.py", line 639, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1912, in raise_routing_exception
+    raise FormDataRoutingRedirect(request)
+flask.debughelpers.FormDataRoutingRedirect: b'A request was sent to this URL (http://3.136.22.230:5000/user) but a redirect was issued automatically by the routing system to "http://3.136.22.230:5000/user/".  The URL was defined with a trailing slash so Flask will automatically redirect to the URL with the trailing slash if it was accessed without one.  Make sure to directly send your POST-request to this URL since we can\'t make browsers or HTTP clients redirect with form data reliably or without user interaction.\n\nNote: this exception is only raised in debug mode'
+179.6.207.73 - - [19/Sep/2020 20:00:14] "POST /user/ HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:00:55] "POST /user HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_restx/api.py", line 639, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_restx/api.py", line 639, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1912, in raise_routing_exception
+    raise FormDataRoutingRedirect(request)
+flask.debughelpers.FormDataRoutingRedirect: b'A request was sent to this URL (http://3.136.22.230:5000/user) but a redirect was issued automatically by the routing system to "http://3.136.22.230:5000/user/".  The URL was defined with a trailing slash so Flask will automatically redirect to the URL with the trailing slash if it was accessed without one.  Make sure to directly send your POST-request to this URL since we can\'t make browsers or HTTP clients redirect with form data reliably or without user interaction.\n\nNote: this exception is only raised in debug mode'
+179.6.207.73 - - [19/Sep/2020 20:01:01] "POST /user HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_restx/api.py", line 639, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_restx/api.py", line 639, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1912, in raise_routing_exception
+    raise FormDataRoutingRedirect(request)
+flask.debughelpers.FormDataRoutingRedirect: b'A request was sent to this URL (http://3.136.22.230:5000/user) but a redirect was issued automatically by the routing system to "http://3.136.22.230:5000/user/".  The URL was defined with a trailing slash so Flask will automatically redirect to the URL with the trailing slash if it was accessed without one.  Make sure to directly send your POST-request to this URL since we can\'t make browsers or HTTP clients redirect with form data reliably or without user interaction.\n\nNote: this exception is only raised in debug mode'
+179.6.207.73 - - [19/Sep/2020 20:05:16] "POST /user/ HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:05:44] "POST /swagger.json HTTP/1.1" 405 -
+179.6.207.73 - - [19/Sep/2020 20:05:50] "POST / HTTP/1.1" 405 -
+179.6.207.73 - - [19/Sep/2020 20:06:05] "POST /user HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_restx/api.py", line 639, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_restx/api.py", line 639, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1912, in raise_routing_exception
+    raise FormDataRoutingRedirect(request)
+flask.debughelpers.FormDataRoutingRedirect: b'A request was sent to this URL (http://3.136.22.230:5000/user) but a redirect was issued automatically by the routing system to "http://3.136.22.230:5000/user/".  The URL was defined with a trailing slash so Flask will automatically redirect to the URL with the trailing slash if it was accessed without one.  Make sure to directly send your POST-request to this URL since we can\'t make browsers or HTTP clients redirect with form data reliably or without user interaction.\n\nNote: this exception is only raised in debug mode'
+179.6.207.73 - - [19/Sep/2020 20:07:26] "POST /user/ HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:07:31] "POST /user HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_restx/api.py", line 639, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask_restx/api.py", line 639, in error_router
+    return original_handler(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1912, in raise_routing_exception
+    raise FormDataRoutingRedirect(request)
+flask.debughelpers.FormDataRoutingRedirect: b'A request was sent to this URL (http://3.136.22.230:5000/user) but a redirect was issued automatically by the routing system to "http://3.136.22.230:5000/user/".  The URL was defined with a trailing slash so Flask will automatically redirect to the URL with the trailing slash if it was accessed without one.  Make sure to directly send your POST-request to this URL since we can\'t make browsers or HTTP clients redirect with form data reliably or without user interaction.\n\nNote: this exception is only raised in debug mode'
+179.6.207.73 - - [19/Sep/2020 20:08:39] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:08:45] "POST /auth/login/ HTTP/1.1" 404 -
+179.6.207.73 - - [19/Sep/2020 20:08:50] "GET /auth/login/ HTTP/1.1" 404 -
+179.6.207.73 - - [19/Sep/2020 20:08:56] "GET /auth/login HTTP/1.1" 405 -
+179.6.207.73 - - [19/Sep/2020 20:09:03] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:09:09] "POST /auth/login/ HTTP/1.1" 404 -
+179.6.207.73 - - [19/Sep/2020 20:09:54] "POST /auth/login/ HTTP/1.1" 404 -
+179.6.207.73 - - [19/Sep/2020 20:10:22] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:10:40] "POST /auth/login/ HTTP/1.1" 404 -
+179.6.207.73 - - [19/Sep/2020 20:11:46] "POST /auth/login/ HTTP/1.1" 404 -
+179.6.207.73 - - [19/Sep/2020 20:12:16] "OPTIONS /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 20:13:34] "POST /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 20:14:40] "POST /auth/login/ HTTP/1.1" 404 -
+179.6.207.73 - - [19/Sep/2020 20:14:44] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:14:55] "POST /auth/login/ HTTP/1.1" 404 -
+179.6.207.73 - - [19/Sep/2020 20:15:14] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:15:51] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:16:14] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:16:53] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:17:27] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:17:45] "OPTIONS /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 20:17:47] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:18:48] "POST /auth/login/ HTTP/1.1" 404 -
+179.6.207.73 - - [19/Sep/2020 20:19:00] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:19:20] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:19:52] "OPTIONS /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 20:19:58] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:21:13] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:21:20] "POST / HTTP/1.1" 405 -
+179.6.207.73 - - [19/Sep/2020 20:21:25] "POST / HTTP/1.1" 405 -
+179.6.207.73 - - [19/Sep/2020 20:21:50] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:25:31] "POST /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 20:26:01] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:26:08] "POST /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 20:27:14] "OPTIONS /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 20:28:37] "OPTIONS /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 20:47:41] "GET /auth/login HTTP/1.1" 405 -
+179.6.207.73 - - [19/Sep/2020 20:48:06] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:50:36] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:50:38] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 20:58:39] "OPTIONS /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 20:59:23] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [19/Sep/2020 21:01:19] "OPTIONS /auth/login HTTP/1.1" 200 -
+18.212.93.51 - - [19/Sep/2020 21:01:32] "GET /auth/login HTTP/1.1" 405 -
+179.6.207.73 - - [19/Sep/2020 21:05:00] "GET /auth/login HTTP/1.1" 405 -
+179.6.207.73 - - [19/Sep/2020 21:05:07] "POST /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 21:05:33] "GET /auth/login?email=pep%40gmail.com&password=123456789 HTTP/1.1" 405 -
+179.6.207.73 - - [19/Sep/2020 21:06:54] "OPTIONS /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 21:14:47] code 400, message Bad request syntax ("\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ÙQ\xa0Hã¦.\x81RH$w§¹AvHYYU\x08.¬\x07®rBÝ~!®ï K~üB\x1a\x05'{BÂÒ¤\x9ap=¯&ê½à7\x9aÕ0ÛÎÑÃKq!D\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93zz\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00")
+179.6.207.73 - - [19/Sep/2020 21:14:47] "  üÙQ Hã¦.RH$w§¹AvHYYU.¬®rBÝ~!®ï K~üB'{BÂÒ¤p=¯&ê½à7Õ0ÛÎÑÃKq!D  jjÀ+À/À,À0Ì©Ì¨ÀÀ   / 5 zz     ÿ   " HTTPStatus.BAD_REQUEST -
+179.6.207.73 - - [19/Sep/2020 21:14:47] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03%Æ\x8b´\x98º\x06õð÷\x9a3\\\x05\x8fL\x85t:{\x8acÓ\x9eü\x0bT°èhkå \x90ÁzµÜñ\x82g\x11¥ò0<:Ó^\x9cÒUºof«§÷\x80á\x88\x9cÔß\x12\x00"ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+179.6.207.73 - - [19/Sep/2020 21:14:47] "  ü%Æ´ºõð÷3\Lt:{cÓüT°èhkå ÁzµÜñg¥ò0<:Ó^ÒUºof«§÷áÔß "ººÀ+À/À,À0Ì©Ì¨ÀÀ   / 5 " HTTPStatus.BAD_REQUEST -
+179.6.207.73 - - [19/Sep/2020 21:15:58] "GET / HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 21:15:58] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 21:15:58] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 21:15:58] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+179.6.207.73 - - [19/Sep/2020 21:15:58] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 21:16:02] "GET /swagger.json HTTP/1.1" 200 -
+179.6.207.73 - - [19/Sep/2020 21:21:05] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Q\x96êÌ5öR\x1cÓÞVäõ÷ÍD¸Q¼÷)?"êr¿ù\x96\x84+øx éö\x11d\x0f#\x9e%¬\x7f;G\x84\x07^ê\x08Ó÷ÓmM¦]ºIäu?L\x0ei\x00 êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93êê\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+179.6.207.73 - - [19/Sep/2020 21:21:05] "  üQêÌ5öRÓÞVäõ÷ÍD¸Q¼÷)?"êr¿ù+øx éöd#%¬;G^êÓ÷ÓmM¦]ºIäu?Li  êêÀ+À/À,À0Ì©Ì¨ÀÀ   / 5 êê     ÿ   " HTTPStatus.BAD_REQUEST -
+179.6.207.73 - - [19/Sep/2020 21:21:06] code 400, message Bad request version ('Ú\x8e<¡EÇÆK|j\x0fÀæ\x00"')
+179.6.207.73 - - [19/Sep/2020 21:21:06] "  ü¯ =uÆ æäÌ¼Qbi½±üEêÎySm|¬ñ ücÄÞúÙ¨[P~ä/êÒoì´Ú<¡EÇÆK|jÀæ "" HTTPStatus.BAD_REQUEST -
+3.93.171.53 - - [19/Sep/2020 21:26:16] code 400, message Bad request version ('*v^j\x97}ï\x19$ìÚÑ\x00\x00vÀ0À,À(À$À\x14À')
+3.93.171.53 - - [19/Sep/2020 21:26:16] "  üöß%õÎxÞ	¾MÞBUf§*v^j}ï$ìÚÑ  vÀ0À,À(À$ÀÀ" HTTPStatus.BAD_REQUEST -
+3.93.171.53 - - [19/Sep/2020 21:26:16] code 400, message Bad request syntax ("\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Ônwªö\x83P]@Ùï\x99Z\x98\x0e\x17ñXÅ\x1a{ÓG'\x13\x92\x0cN¤\x0c\x8a\x1e\x00\x00vÀ0À,À(À$À\x14À")
+3.93.171.53 - - [19/Sep/2020 21:26:16] "  üÔnwªöP]@ÙïZñXÅ{ÓG'N¤  vÀ0À,À(À$ÀÀ" HTTPStatus.BAD_REQUEST -
+179.6.207.73 - - [19/Sep/2020 21:29:15] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x85\x14T\xa0\x85\x89\x1bÍ,\x80æO½\x8a\rÞ-qB\x02qõÍ\x05Yø¯îm\x7f\x07ð \x86U8!á\x89\x80\x18ûÖ\x14\x08ç\x13S¤\xa0oÈ\x81X\x9e8=PP@X¼Ir¦\x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ZZ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+179.6.207.73 - - [19/Sep/2020 21:29:15] "  üT Í,æO½Þ-qBqõÍYø¯îmð U8!áûÖçS¤ oÈX8=PP@X¼Ir¦  À+À/À,À0Ì©Ì¨ÀÀ   / 5 ZZ     ÿ   " HTTPStatus.BAD_REQUEST -
+179.6.207.73 - - [19/Sep/2020 21:29:16] code 400, message Bad request version ('7àíé:\x13An#øëP\x14z+(®ÒÆQ2l`P%Qíù«\x92¡\x01\x00"\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+179.6.207.73 - - [19/Sep/2020 21:29:16] "  ü"£g<Ä2Xåpâ(BÍ&Úv6+xv 7àíé:An#øëPz+(®ÒÆQ2l`P%Qíù«¡ "À+À/À,À0Ì©Ì¨ÀÀ   / 5 " HTTPStatus.BAD_REQUEST -
+179.6.207.73 - - [19/Sep/2020 21:29:58] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03r¡\x1fÚ\xad8v9ùYÚÝ^¿2UãuÇá,\x0bÔÐ\x9a-h¼¿g\x94÷ 7\x936yjØ\x97Îø\x1d0-0\x85\x12P')
+179.6.207.73 - - [19/Sep/2020 21:29:58] "  ür¡Ú­8v9ùYÚÝ^¿2UãuÇá,ÔÐ-h¼¿g÷ 76yjØÎø0-0P" HTTPStatus.BAD_REQUEST -
+179.6.207.73 - - [19/Sep/2020 21:29:58] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x96ÔËº\x8dðèê\x85c:%Ì!\x8c\xa0àò\xadÒz\x10T7Ç\x18\x1c\x00í\x84[ç ÐÁ¹Ov\x13ô%\x82\x0ehï+iý\x7fW\x15:²¿§µÿùÍôQÍ^ðm\x00"\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+179.6.207.73 - - [19/Sep/2020 21:29:58] "  üÔËºðèêc:%Ì! àò­ÒzT7Ç í[ç ÐÁ¹Ovô%hï+iýW:²¿§µÿùÍôQÍ^ðm "À+À/À,À0Ì©Ì¨ÀÀ   / 5 " HTTPStatus.BAD_REQUEST -
+python3 manage.py run
+ * Serving Flask app "app.main" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on https://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 580-507-755
+62.57.56.91 - - [20/Sep/2020 23:57:32] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [20/Sep/2020 23:57:33] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+62.57.56.91 - - [20/Sep/2020 23:57:33] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+62.57.56.91 - - [20/Sep/2020 23:57:35] "GET /swagger.json HTTP/1.1" 200 -
+62.57.56.91 - - [21/Sep/2020 15:27:59] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [21/Sep/2020 15:28:00] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+62.57.56.91 - - [21/Sep/2020 15:28:00] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+62.57.56.91 - - [21/Sep/2020 15:28:01] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+62.57.56.91 - - [21/Sep/2020 15:28:01] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+62.57.56.91 - - [21/Sep/2020 15:28:05] "GET /swagger.json HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 15:30:12] "GET / HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 15:30:13] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 15:30:14] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 15:30:14] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 15:30:14] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 15:30:16] "GET /swagger.json HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 15:30:16] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 15:59:07] "GET / HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 15:59:07] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 15:59:08] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 15:59:08] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 15:59:08] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 15:59:09] "GET /swagger.json HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 15:59:10] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 15:59:17] "GET /swagger.json HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 15:59:18] "GET /favicon.ico HTTP/1.1" 404 -
+190.113.211.135 - - [21/Sep/2020 16:01:02] "GET /user/pep%40gmail.com HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 16:04:29] "GET / HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 16:04:30] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 16:04:30] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 16:04:30] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 16:04:30] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 16:04:32] "GET /swagger.json HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 16:07:59] "OPTIONS //auth/login HTTP/1.1" 404 -
+179.6.207.73 - - [21/Sep/2020 16:08:57] "OPTIONS /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 16:09:48] "OPTIONS /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 16:11:07] "OPTIONS /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 16:13:10] "OPTIONS /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 16:27:25] "OPTIONS /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 16:42:34] "OPTIONS /auth/login HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 16:54:07] "GET /auth/login HTTP/1.1" 405 -
+190.113.211.135 - - [21/Sep/2020 16:54:14] "GET /auth/login HTTP/1.1" 405 -
+190.113.211.135 - - [21/Sep/2020 16:55:07] "GET /auth/login HTTP/1.1" 405 -
+190.113.211.135 - - [21/Sep/2020 16:55:37] "GET / HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 16:55:38] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 16:55:38] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 16:55:38] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 16:55:38] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 16:55:40] "GET /swagger.json HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 16:55:54] "GET /user/pep%40gmail.com HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 16:57:54] "GET /auth/login HTTP/1.1" 405 -
+190.113.211.135 - - [21/Sep/2020 16:58:06] "POST /auth/login HTTP/1.1" 401 -
+190.113.211.135 - - [21/Sep/2020 16:58:32] "GET /user HTTP/1.1" 308 -
+190.113.211.135 - - [21/Sep/2020 16:58:33] "GET /user/ HTTP/1.1" 401 -
+179.6.207.73 - - [21/Sep/2020 16:58:36] "GET / HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 16:58:38] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 16:58:38] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 16:58:38] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 16:58:38] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 16:58:40] "GET /swagger.json HTTP/1.1" 200 -
+190.113.211.135 - - [21/Sep/2020 16:58:47] "GET /user/ HTTP/1.1" 401 -
+190.113.211.135 - - [21/Sep/2020 16:59:08] "GET /auth/login HTTP/1.1" 405 -
+190.113.211.135 - - [21/Sep/2020 17:00:42] "POST /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:01:45] "POST /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:03:02] "GET /auth/login HTTP/1.1" 405 -
+179.6.207.73 - - [21/Sep/2020 17:03:08] "POST /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:08:41] "GET /user/pep@gmail.com HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:10:30] "OPTIONS /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:13:50] "POST /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:18:54] "GET / HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:18:55] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:18:56] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:18:56] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:18:56] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:18:58] "GET /swagger.json HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:18:58] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:20:06] "GET / HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:20:07] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:20:07] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:20:07] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:20:07] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:20:09] "GET /swagger.json HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:23:26] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [21/Sep/2020 17:24:29] "POST /auth/login HTTP/1.1" 400 -
+179.6.207.73 - - [21/Sep/2020 17:34:05] "OPTIONS /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:36:31] "POST /auth/login HTTP/1.1" 200 -
+179.6.207.73 - - [21/Sep/2020 17:36:52] "POST /auth/login HTTP/1.1" 400 -
+62.57.56.91 - - [21/Sep/2020 17:37:43] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [21/Sep/2020 17:37:43] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+62.57.56.91 - - [21/Sep/2020 17:37:43] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+62.57.56.91 - - [21/Sep/2020 17:37:45] "GET /swagger.json HTTP/1.1" 200 -
+62.57.56.91 - - [21/Sep/2020 17:37:47] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [21/Sep/2020 17:37:48] "GET /swagger.json HTTP/1.1" 200 -
+62.57.56.91 - - [21/Sep/2020 17:37:51] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [21/Sep/2020 17:37:52] "GET /swagger.json HTTP/1.1" 200 -
+Makefile:16: recipe for target 'run' failed
+make: *** [run] Terminated
+python3 manage.py run
+ * Serving Flask app "app.main" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on https://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 580-507-755
+62.57.56.91 - - [24/Sep/2020 13:59:07] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [24/Sep/2020 13:59:08] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+62.57.56.91 - - [24/Sep/2020 13:59:08] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+62.57.56.91 - - [24/Sep/2020 13:59:08] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+62.57.56.91 - - [24/Sep/2020 13:59:08] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+62.57.56.91 - - [24/Sep/2020 13:59:14] "GET /swagger.json HTTP/1.1" 200 -
+198.143.133.154 - - [25/Sep/2020 08:02:57] "GET / HTTP/1.1" 200 -
+179.6.207.73 - - [25/Sep/2020 12:49:27] "GET / HTTP/1.1" 200 -
+179.6.207.73 - - [25/Sep/2020 12:49:28] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+179.6.207.73 - - [25/Sep/2020 12:49:28] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+179.6.207.73 - - [25/Sep/2020 12:49:28] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+179.6.207.73 - - [25/Sep/2020 12:49:28] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+179.6.207.73 - - [25/Sep/2020 12:49:34] "GET /swagger.json HTTP/1.1" 200 -
+179.6.207.73 - - [25/Sep/2020 12:49:34] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:42:49] "GET / HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:42:51] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:42:51] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:42:51] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:42:51] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:42:53] "GET /swagger.json HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:42:53] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 13:43:34] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 13:43:35] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 13:43:35] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 13:43:36] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 13:43:36] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 13:43:40] "GET /swagger.json HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:43:50] "GET / HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:43:51] "GET / HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:43:51] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:43:51] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:43:51] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:43:51] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:43:52] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:43:52] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:43:53] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:43:53] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:43:55] "GET /swagger.json HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:56:59] "POST /auth/login HTTP/1.1" 200 -
+190.113.210.92 - - [25/Sep/2020 13:57:17] "POST /auth/logout HTTP/1.1" 403 -
+190.113.210.92 - - [25/Sep/2020 13:57:24] "POST /auth/logout HTTP/1.1" 403 -
+62.57.56.91 - - [25/Sep/2020 22:34:58] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 22:34:59] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 22:35:00] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 22:35:00] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 22:35:00] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 22:35:04] "GET /swagger.json HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 22:37:11] "GET / HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 22:37:12] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 22:37:12] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 22:37:13] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 22:37:13] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 22:37:18] "GET /swagger.json HTTP/1.1" 200 -
+62.57.56.91 - - [25/Sep/2020 22:37:19] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+Makefile:16: recipe for target 'run' failed
+make: *** [run] Terminated
+python3 manage.py run
+ * Serving Flask app "app.main" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on https://0.0.0.0:8080/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 580-507-755
+62.57.56.91 - - [27/Sep/2020 09:18:35] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+62.57.56.91 - - [27/Sep/2020 09:18:36] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+62.57.56.91 - - [27/Sep/2020 14:14:10] "[37mGET / HTTP/1.1[0m" 200 -
+62.57.56.91 - - [27/Sep/2020 14:14:10] "[37mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 200 -
+62.57.56.91 - - [27/Sep/2020 14:14:10] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+62.57.56.91 - - [27/Sep/2020 14:14:11] "[37mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 200 -
+62.57.56.91 - - [27/Sep/2020 14:14:11] "[37mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 200 -
+62.57.56.91 - - [27/Sep/2020 14:14:13] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+190.113.209.156 - - [27/Sep/2020 15:10:14] "[37mGET / HTTP/1.1[0m" 200 -
+190.113.209.156 - - [27/Sep/2020 15:10:14] "[37mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 200 -
+190.113.209.156 - - [27/Sep/2020 15:10:14] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+190.113.209.156 - - [27/Sep/2020 15:10:15] "[37mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 200 -
+190.113.209.156 - - [27/Sep/2020 15:10:15] "[37mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 200 -
+190.113.209.156 - - [27/Sep/2020 15:10:17] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+190.113.209.156 - - [27/Sep/2020 15:10:17] "[37mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 200 -
+190.113.209.156 - - [27/Sep/2020 15:16:24] "[37mGET /user/pep%40gmail.com HTTP/1.1[0m" 200 -
+190.113.209.156 - - [27/Sep/2020 15:16:37] "[33mGET /user/ronald%40gmail.com HTTP/1.1[0m" 404 -
+190.113.209.156 - - [27/Sep/2020 15:17:01] "[31m[1mGET /user/ HTTP/1.1[0m" 401 -
+34.235.111.177 - - [27/Sep/2020 15:48:12] "[37mGET / HTTP/1.1[0m" 200 -
+34.235.111.177 - - [27/Sep/2020 15:48:12] "[37mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 200 -
+190.113.209.156 - - [27/Sep/2020 15:52:23] "[31m[1mPOST /auth/logout HTTP/1.1[0m" 403 -
+190.113.209.156 - - [27/Sep/2020 15:52:33] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+167.248.133.34 - - [27/Sep/2020 21:43:37] "[37mGET / HTTP/1.1[0m" 200 -
+167.248.133.34 - - [27/Sep/2020 21:43:37] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.207.73 - - [27/Sep/2020 23:50:13] "[31m[1mPOST /auth/login HTTP/1.1[0m" 400 -
+179.6.207.73 - - [27/Sep/2020 23:51:55] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.207.73 - - [27/Sep/2020 23:51:55] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+179.6.207.73 - - [27/Sep/2020 23:51:56] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+179.6.207.73 - - [27/Sep/2020 23:51:56] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+179.6.207.73 - - [27/Sep/2020 23:51:56] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+179.6.207.73 - - [27/Sep/2020 23:51:57] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+179.6.207.73 - - [27/Sep/2020 23:51:57] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+179.6.207.73 - - [27/Sep/2020 23:52:49] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [27/Sep/2020 23:56:30] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [27/Sep/2020 23:56:31] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [27/Sep/2020 23:59:08] "[37mGET /user/pep%40gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [27/Sep/2020 23:59:53] "[31m[1mGET /user/ HTTP/1.1[0m" 401 -
+179.6.207.73 - - [28/Sep/2020 00:05:12] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:05:13] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:05:14] "[37mGET //user/pep@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:12:32] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:12:33] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:12:33] "[37mGET /user/pep@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:25:26] "[37mOPTIONS /user/ HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:25:26] "[37mPOST /user/ HTTP/1.1[0m" 201 -
+179.6.207.73 - - [28/Sep/2020 00:32:33] "[37mOPTIONS /user/ HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:32:34] "[37mPOST /user/ HTTP/1.1[0m" 201 -
+179.6.207.73 - - [28/Sep/2020 00:32:35] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:32:36] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:32:36] "[37mGET /user/auri@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:35:48] "[37mOPTIONS /user/ HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:35:49] "[37mPOST /user/ HTTP/1.1[0m" 201 -
+179.6.207.73 - - [28/Sep/2020 00:35:50] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:35:51] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:35:51] "[37mGET /user/mary@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:39:09] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:39:09] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:39:10] "[37mGET /user/mary@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:46:25] "[37mOPTIONS /user/ HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:46:26] "[31m[1mPOST /user/ HTTP/1.1[0m" 409 -
+179.6.207.73 - - [28/Sep/2020 00:47:08] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:47:09] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [28/Sep/2020 00:47:09] "[37mGET /user/auri@gmail.com HTTP/1.1[0m" 200 -
+192.35.168.220 - - [28/Sep/2020 11:43:38] "[37mGET / HTTP/1.1[0m" 200 -
+192.35.168.220 - - [28/Sep/2020 11:43:38] "[37mGET / HTTP/1.1[0m" 200 -
+156.96.128.174 - - [28/Sep/2020 16:04:23] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.52 - - [28/Sep/2020 22:42:18] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.52 - - [28/Sep/2020 22:42:18] "[37mGET / HTTP/1.1[0m" 200 -
+167.248.133.33 - - [28/Sep/2020 22:43:59] "[37mGET / HTTP/1.1[0m" 200 -
+167.248.133.33 - - [28/Sep/2020 22:43:59] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.49 - - [29/Sep/2020 05:18:44] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.49 - - [29/Sep/2020 05:18:44] "[37mGET / HTTP/1.1[0m" 200 -
+74.120.14.49 - - [29/Sep/2020 10:37:33] "[37mGET / HTTP/1.1[0m" 200 -
+74.120.14.49 - - [29/Sep/2020 10:37:33] "[37mGET / HTTP/1.1[0m" 200 -
+190.113.211.106 - - [29/Sep/2020 12:50:36] "[37mGET / HTTP/1.1[0m" 200 -
+190.113.211.106 - - [29/Sep/2020 12:50:50] "[37mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 200 -
+190.113.211.106 - - [29/Sep/2020 12:50:51] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+190.113.211.106 - - [29/Sep/2020 12:50:52] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+190.113.211.106 - - [29/Sep/2020 12:50:52] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+190.113.211.106 - - [29/Sep/2020 12:51:09] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+190.113.211.106 - - [29/Sep/2020 12:51:09] "[37mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 200 -
+179.6.207.73 - - [29/Sep/2020 13:47:53] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [29/Sep/2020 13:47:53] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [29/Sep/2020 13:47:54] "[37mGET /user/pep@gmail.com HTTP/1.1[0m" 200 -
+190.113.211.106 - - [29/Sep/2020 19:58:00] "[37mGET / HTTP/1.1[0m" 200 -
+190.113.211.106 - - [29/Sep/2020 19:58:01] "[37mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 200 -
+190.113.211.106 - - [29/Sep/2020 19:58:01] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+190.113.211.106 - - [29/Sep/2020 19:58:01] "[37mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 200 -
+190.113.211.106 - - [29/Sep/2020 19:58:01] "[37mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 200 -
+190.113.211.106 - - [29/Sep/2020 19:58:03] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+190.113.211.106 - - [29/Sep/2020 20:27:41] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+179.6.207.73 - - [29/Sep/2020 23:28:28] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.207.73 - - [29/Sep/2020 23:28:29] "[37mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 200 -
+179.6.207.73 - - [29/Sep/2020 23:28:29] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+179.6.207.73 - - [29/Sep/2020 23:28:29] "[37mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 200 -
+179.6.207.73 - - [29/Sep/2020 23:28:29] "[37mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 200 -
+179.6.207.73 - - [29/Sep/2020 23:28:31] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+179.6.207.73 - - [29/Sep/2020 23:28:31] "[37mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 200 -
+179.6.207.73 - - [29/Sep/2020 23:29:26] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [29/Sep/2020 23:29:26] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [29/Sep/2020 23:29:27] "[37mGET /user/pep@gmail.com HTTP/1.1[0m" 200 -
+201.230.191.157 - - [30/Sep/2020 00:01:10] "[37mOPTIONS /user/ HTTP/1.1[0m" 200 -
+201.230.191.157 - - [30/Sep/2020 00:01:10] "[37mPOST /user/ HTTP/1.1[0m" 201 -
+201.230.191.157 - - [30/Sep/2020 00:01:10] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+201.230.191.157 - - [30/Sep/2020 00:01:11] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+201.230.191.157 - - [30/Sep/2020 00:01:11] "[37mGET /user/lalo@operativa.pe HTTP/1.1[0m" 200 -
+156.96.128.174 - - [30/Sep/2020 02:21:13] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.207.73 - - [30/Sep/2020 04:52:35] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [30/Sep/2020 04:52:36] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [30/Sep/2020 04:52:36] "[37mGET /user/pep@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [30/Sep/2020 13:15:18] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.207.73 - - [30/Sep/2020 13:15:18] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+179.6.207.73 - - [30/Sep/2020 13:15:19] "[37mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 200 -
+179.6.207.73 - - [30/Sep/2020 13:15:19] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+179.6.207.73 - - [30/Sep/2020 13:15:19] "[37mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 200 -
+179.6.207.73 - - [30/Sep/2020 13:15:20] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+179.6.207.73 - - [30/Sep/2020 13:15:53] "[31m[1mPOST /auth/logout HTTP/1.1[0m" 403 -
+179.6.207.73 - - [30/Sep/2020 13:17:05] "[37mPOST /auth/reset_password HTTP/1.1[0m" 200 -
+179.6.207.73 - - [30/Sep/2020 13:18:15] "[37mPOST /auth/reset_password HTTP/1.1[0m" 200 -
+190.113.211.106 - - [30/Sep/2020 13:44:53] "[37mPOST /auth/reset_password HTTP/1.1[0m" 200 -
+188.166.225.17 - - [30/Sep/2020 15:28:00] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.207.73 - - [30/Sep/2020 18:30:33] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.207.73 - - [30/Sep/2020 18:30:33] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+179.6.207.73 - - [30/Sep/2020 18:30:34] "[37mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 200 -
+179.6.207.73 - - [30/Sep/2020 21:06:14] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [30/Sep/2020 21:06:15] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [30/Sep/2020 21:06:15] "[37mGET /user/pep@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [01/Oct/2020 01:38:59] "[37mPOST /auth/reset_password HTTP/1.1[0m" 200 -
+156.96.128.174 - - [01/Oct/2020 08:32:20] "[37mGET / HTTP/1.1[0m" 200 -
+74.120.14.35 - - [01/Oct/2020 12:05:17] "[37mGET / HTTP/1.1[0m" 200 -
+74.120.14.35 - - [01/Oct/2020 12:05:17] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.36 - - [01/Oct/2020 12:55:41] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.36 - - [01/Oct/2020 12:55:41] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.207.73 - - [01/Oct/2020 13:24:47] "[37mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 200 -
+179.6.207.73 - - [01/Oct/2020 13:24:48] "[37mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 200 -
+179.6.207.73 - - [01/Oct/2020 13:25:21] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.207.73 - - [01/Oct/2020 13:25:22] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+179.6.207.73 - - [01/Oct/2020 13:25:22] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+179.6.207.73 - - [01/Oct/2020 13:25:23] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+179.6.207.73 - - [01/Oct/2020 13:25:23] "[37mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 200 -
+167.248.133.35 - - [01/Oct/2020 18:13:15] "[37mGET / HTTP/1.1[0m" 200 -
+167.248.133.35 - - [01/Oct/2020 18:13:15] "[37mGET / HTTP/1.1[0m" 200 -
+185.216.140.6 - - [02/Oct/2020 00:12:03] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 00:44:17] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 00:44:17] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 00:44:18] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 00:44:18] "[37mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 200 -
+192.35.168.249 - - [02/Oct/2020 04:54:33] "[37mGET / HTTP/1.1[0m" 200 -
+192.35.168.249 - - [02/Oct/2020 04:54:33] "[37mGET / HTTP/1.1[0m" 200 -
+156.96.128.174 - - [02/Oct/2020 07:49:33] "[37mGET / HTTP/1.1[0m" 200 -
+190.113.209.77 - - [02/Oct/2020 12:27:25] "[37mGET / HTTP/1.1[0m" 200 -
+190.113.209.77 - - [02/Oct/2020 12:27:25] "[37mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 200 -
+190.113.209.77 - - [02/Oct/2020 12:27:26] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+190.113.209.77 - - [02/Oct/2020 12:27:26] "[37mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 200 -
+190.113.209.77 - - [02/Oct/2020 12:27:26] "[37mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 200 -
+190.113.209.77 - - [02/Oct/2020 12:27:29] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+192.241.237.57 - - [02/Oct/2020 20:48:43] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 21:12:39] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 21:12:40] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 21:12:41] "[37mGET /user/pep@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 22:59:16] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 22:59:17] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 22:59:18] "[37mGET /user/pep@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 23:04:33] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 23:04:33] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 23:04:34] "[37mGET /user/pep@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 23:39:19] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 23:39:20] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 23:39:20] "[37mGET /user/pep@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 23:57:19] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 23:57:19] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [02/Oct/2020 23:57:20] "[37mGET /user/pep@gmail.com HTTP/1.1[0m" 200 -
+156.96.128.174 - - [03/Oct/2020 00:51:53] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.34 - - [03/Oct/2020 04:31:48] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.34 - - [03/Oct/2020 04:31:48] "[37mGET / HTTP/1.1[0m" 200 -
+74.120.14.34 - - [03/Oct/2020 08:47:20] "[37mGET / HTTP/1.1[0m" 200 -
+74.120.14.34 - - [03/Oct/2020 08:47:20] "[37mGET / HTTP/1.1[0m" 200 -
+89.208.199.25 - - [03/Oct/2020 23:15:29] "[37mGET / HTTP/1.1[0m" 200 -
+89.208.199.25 - - [03/Oct/2020 23:15:30] "[33mGET /HNAP1/ HTTP/1.1[0m" 404 -
+192.35.168.199 - - [04/Oct/2020 03:53:29] "[37mGET / HTTP/1.1[0m" 200 -
+192.35.168.199 - - [04/Oct/2020 03:53:29] "[37mGET / HTTP/1.1[0m" 200 -
+156.96.128.174 - - [04/Oct/2020 04:27:59] "[37mGET / HTTP/1.1[0m" 200 -
+167.248.133.50 - - [04/Oct/2020 05:14:13] "[37mGET / HTTP/1.1[0m" 200 -
+167.248.133.50 - - [04/Oct/2020 05:14:13] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.36 - - [04/Oct/2020 09:23:03] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.36 - - [04/Oct/2020 09:23:03] "[37mGET / HTTP/1.1[0m" 200 -
+74.120.14.51 - - [05/Oct/2020 00:55:33] "[37mGET / HTTP/1.1[0m" 200 -
+74.120.14.51 - - [05/Oct/2020 00:55:33] "[37mGET / HTTP/1.1[0m" 200 -
+178.54.86.113 - - [05/Oct/2020 01:10:35] "[37mGET / HTTP/1.1[0m" 200 -
+178.54.86.113 - - [05/Oct/2020 01:10:36] "[37mGET / HTTP/1.1[0m" 200 -
+156.96.128.174 - - [05/Oct/2020 08:54:52] "[37mGET / HTTP/1.1[0m" 200 -
+74.120.14.50 - - [05/Oct/2020 09:09:54] "[37mGET / HTTP/1.1[0m" 200 -
+74.120.14.50 - - [05/Oct/2020 09:09:54] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.207.73 - - [05/Oct/2020 12:50:38] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.207.73 - - [05/Oct/2020 12:50:38] "[37mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 200 -
+179.6.207.73 - - [05/Oct/2020 12:50:39] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+179.6.207.73 - - [05/Oct/2020 12:50:39] "[37mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 200 -
+179.6.207.73 - - [05/Oct/2020 12:50:39] "[37mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 200 -
+179.6.207.73 - - [05/Oct/2020 12:50:40] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+179.6.207.73 - - [05/Oct/2020 12:51:44] "[37mGET /state/ HTTP/1.1[0m" 200 -
+179.6.207.73 - - [05/Oct/2020 13:04:00] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [05/Oct/2020 13:04:00] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [05/Oct/2020 13:04:01] "[37mGET /user/pep@gmail.com HTTP/1.1[0m" 200 -
+179.6.47.213 - - [05/Oct/2020 13:37:09] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.47.213 - - [05/Oct/2020 13:37:10] "[37mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 200 -
+179.6.47.213 - - [05/Oct/2020 13:37:10] "[37mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 200 -
+179.6.47.213 - - [05/Oct/2020 13:37:10] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+179.6.47.213 - - [05/Oct/2020 13:37:10] "[37mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 200 -
+179.6.47.213 - - [05/Oct/2020 13:37:12] "[37mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 200 -
+179.6.47.213 - - [05/Oct/2020 13:37:12] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+179.6.47.213 - - [05/Oct/2020 13:38:05] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.47.213 - - [05/Oct/2020 13:38:07] "[37mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 200 -
+179.6.47.213 - - [05/Oct/2020 13:38:07] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+179.6.47.213 - - [05/Oct/2020 13:39:01] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.47.213 - - [05/Oct/2020 13:39:03] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+54.174.130.118 - - [05/Oct/2020 13:43:11] "[37mGET / HTTP/1.1[0m" 200 -
+54.174.130.118 - - [05/Oct/2020 13:43:11] "[37mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 200 -
+167.248.133.34 - - [05/Oct/2020 14:13:55] "[37mGET / HTTP/1.1[0m" 200 -
+167.248.133.34 - - [05/Oct/2020 14:13:55] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.207.73 - - [05/Oct/2020 15:34:52] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [05/Oct/2020 15:34:52] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [05/Oct/2020 15:34:53] "[37mGET /user/pep@gmail.com HTTP/1.1[0m" 200 -
+211.225.230.85 - - [05/Oct/2020 18:58:16] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+162.142.125.35 - - [06/Oct/2020 05:17:44] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.35 - - [06/Oct/2020 05:17:44] "[37mGET / HTTP/1.1[0m" 200 -
+ * Detected change in '/usr/lib/python3/dist-packages/urllib3/connectionpool.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 580-507-755
+192.35.168.251 - - [06/Oct/2020 07:23:18] "[37mGET / HTTP/1.1[0m" 200 -
+192.35.168.251 - - [06/Oct/2020 07:23:18] "[37mGET / HTTP/1.1[0m" 200 -
+192.35.169.48 - - [06/Oct/2020 14:40:39] "[37mGET / HTTP/1.1[0m" 200 -
+179.6.207.73 - - [06/Oct/2020 20:44:39] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [06/Oct/2020 20:44:40] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [06/Oct/2020 20:44:40] "[37mGET /user/pep@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [06/Oct/2020 21:20:47] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [06/Oct/2020 21:20:48] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [06/Oct/2020 21:20:48] "[37mGET /user/pep@gmail.com HTTP/1.1[0m" 200 -
+190.113.208.189 - - [07/Oct/2020 15:54:23] "[37mGET / HTTP/1.1[0m" 200 -
+190.113.208.189 - - [07/Oct/2020 15:54:23] "[37mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 200 -
+190.113.208.189 - - [07/Oct/2020 15:54:24] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+190.113.208.189 - - [07/Oct/2020 15:54:24] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+190.113.208.189 - - [07/Oct/2020 15:54:24] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+190.113.208.189 - - [07/Oct/2020 15:54:25] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+190.113.208.189 - - [07/Oct/2020 15:54:25] "[37mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 16:40:12] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 16:40:13] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 16:40:13] "[37mGET /user/pep@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 16:47:19] "[37mOPTIONS /user/ HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 16:47:20] "[37mPOST /user/ HTTP/1.1[0m" 201 -
+179.6.207.73 - - [07/Oct/2020 16:47:20] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 16:47:21] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 16:47:21] "[37mGET /user/marilyn@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 16:55:39] "[37mOPTIONS /user/ HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 16:55:39] "[31m[1mPOST /user/ HTTP/1.1[0m" 409 -
+179.6.207.73 - - [07/Oct/2020 16:56:12] "[37mOPTIONS /user/ HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 16:56:13] "[31m[1mPOST /user/ HTTP/1.1[0m" 409 -
+179.6.207.73 - - [07/Oct/2020 16:56:13] "[31m[1mPOST /user/ HTTP/1.1[0m" 409 -
+179.6.207.73 - - [07/Oct/2020 16:56:13] "[31m[1mPOST /user/ HTTP/1.1[0m" 409 -
+179.6.207.73 - - [07/Oct/2020 16:56:13] "[31m[1mPOST /user/ HTTP/1.1[0m" 409 -
+179.6.207.73 - - [07/Oct/2020 16:56:17] "[37mPOST /user/ HTTP/1.1[0m" 201 -
+179.6.207.73 - - [07/Oct/2020 16:56:17] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 16:56:18] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 16:56:18] "[37mGET /user/mary2@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 18:52:56] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 18:52:56] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 18:52:57] "[37mGET /user/pep@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 19:42:39] "[37mOPTIONS /user/ HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 19:42:40] "[37mPOST /user/ HTTP/1.1[0m" 201 -
+179.6.207.73 - - [07/Oct/2020 19:42:41] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 19:42:42] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 19:42:42] "[37mGET /user/ramel@gmail.com HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 20:01:10] "[37mOPTIONS /user/ HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 20:01:11] "[37mPOST /user/ HTTP/1.1[0m" 201 -
+179.6.207.73 - - [07/Oct/2020 20:01:11] "[37mOPTIONS /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 20:01:12] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+179.6.207.73 - - [07/Oct/2020 20:01:13] "[37mGET /user/maria@gmail.com HTTP/1.1[0m" 200 -
+74.120.14.51 - - [07/Oct/2020 20:48:22] "[37mGET / HTTP/1.1[0m" 200 -
+74.120.14.51 - - [07/Oct/2020 20:48:23] "[37mGET / HTTP/1.1[0m" 200 -
