@@ -7,7 +7,6 @@ from app.main.model.account import Account
 
 def save_account(data):
     account = Account.query.filter_by(email=data['email']).first()
-    print(account.id)
     if not account:
         new_account = Account(
             email=data['email'],
