@@ -236,16 +236,11 @@ sudo service supervisor restart
 
 You server has to be ubuntu 16.04 LTS, 16GB RAM, 125GB SSD.
 
-In server.py can change the root where audio files are saving.
-
-
 ## Code documentation
 
-Documentation (incomplete) for the code can be found here: https://docs.google.com/document/d/1nOP5HCoASVtoykoC3LNMzKZEPyz-cU86YubEAo4COxw/edit
 
 ## Contact
 
 We are always happy to hear from you:
 
 * Rodolfo Zevallos rjzevallos.salazar@gmail.com 
-* Luis Camacho camacho.l@pucp.pe
