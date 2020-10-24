@@ -6,23 +6,30 @@ from app.main.model.user import User
 
 
 def save_new_user(data):
-    user = User.query.filter_by(email=data['email']).first()
-    if not user:
+    if data["id_account"] > 0:
         new_user = User(
-            email=data['email'],
-            password=data['password'],
-			#first_name=data['first_name'],
-			#middle_name=data['middle_name'],
-			#last_name=data['last_name'],
-			#type_doc=data['type_doc'],
-			#num_doc=data['num_doc'],
-			#id_country=data['id_country'],
-			#id_state=data['id_state'],
-			#id_city=data['id_city'],
-            #registered_on=datetime.datetime.utcnow()
+			id_account = data['id_account'],
+			first_name=data['first_name'],
+			last_name=data['last_name'],
+			gender = data['gender'],
+			type_doc=data['type_doc'],
+			num_doc=data['num_doc'],
+			birth_date=data['birth_date'],
+			address=data['address'],
+			phone=data['phone'],
+			id_country=data['id_country'],
+			id_state=data['id_state'],
+			id_city=data['id_city'],
+			id_civil_status=data['id_civil_status'],
+			id_provider=data['id_provider'],
+            registered_on=datetime.datetime.now()
         )
         save_changes(new_user)
-        return generate_token(new_user)
+        response_object = {
+            'status': 'success',
+            'message': 'Successfully registered.'
+        }
+        return response_object, 201
     else:
         response_object = {
             'status': 'fail',
@@ -35,26 +42,8 @@ def get_all_users():
     return User.query.all()
 
 
-def get_a_user(email):
-    return User.query.filter_by(email=email).first()
-
-
-def generate_token(user):
-    try:
-        # generate the auth token
-        auth_token = User.encode_auth_token(user.id)
-        response_object = {
-            'status': 'success',
-            'message': 'Successfully registered.',
-            'Authorization': auth_token.decode()
-        }
-        return response_object, 201
-    except Exception as e:
-        response_object = {
-            'status': 'fail',
-            'message': 'Some error occurred. Please try again.'
-        }
-        return response_object, 401
+def get_a_user(id_account):
+    return User.query.filter_by(id_account=id_account).first()
 
 
 def save_changes(data):

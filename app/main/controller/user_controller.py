@@ -12,7 +12,6 @@ _user = UserDto.user
 @api.route('/')
 class UserList(Resource):
     @api.doc('list_of_registered_users')
-    @admin_token_required
     @api.marshal_list_with(_user, envelope='data')
     def get(self):
         """List all registered users"""
@@ -27,15 +26,15 @@ class UserList(Resource):
         return save_new_user(data=data)
 
 
-@api.route('/<email>')
-@api.param('email', 'The User identifier')
+@api.route('/<id_account>')
+@api.param('id_account', 'The User identifier')
 @api.response(404, 'User not found.')
 class User(Resource):
     @api.doc('get a user')
     @api.marshal_with(_user)
-    def get(self, email):
+    def get(self, id_account):
         """get a user given its identifier"""
-        user = get_a_user(email)
+        user = get_a_user(id_account)
         if not user:
             api.abort(404)
         else:
