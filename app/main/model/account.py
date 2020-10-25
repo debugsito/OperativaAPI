@@ -10,7 +10,7 @@ class Account(db.Model):
 	__tablename__ = "account"
 	id = db.Column(db.Integer, primary_key=True, autoincrement=True)
 	email = db.Column(db.String(255), unique=True, nullable=False)
-	password = db.Column(db.String(100))
+	password_hash = db.Column(db.String(100))
 	old_password = db.Column(db.String(100))
 	term_condi = db.Column(db.Integer)
 	wrong_login_attempt = db.Column(db.DateTime)
@@ -24,10 +24,11 @@ class Account(db.Model):
 	
 	@password.setter
 	def password(self, password):
-		self.password = flask_bcrypt.generate_password_hash(password).decode('utf-8')
+		self.password_hash = flask_bcrypt.generate_password_hash(password).decode('utf-8')
+		print(password_hash)
 		
 	def check_password(self, password):
-		return flask_bcrypt.check_password_hash(self.password, password)
+		return flask_bcrypt.check_password_hash(self.password_hash, password)
 	
 	@staticmethod
 	def encode_auth_token(id):

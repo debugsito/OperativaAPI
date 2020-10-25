@@ -10,7 +10,7 @@ def save_account(data):
     if not account:
         new_account = Account(
             email=data['email'],
-            password=data['password'],
+            password_hash=data['password'],
 			old_password = "",
 			term_condi = data['term_condi'],
 			wrong_login_attempt = None,
