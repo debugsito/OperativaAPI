@@ -4,7 +4,7 @@
 [![Task Status](https://github.taskcluster.net/v1/repository/mozilla/DeepSpeech/master/badge.svg)](https://github.taskcluster.net/v1/repository/mozilla/DeepSpeech/master/latest)
 
 
-SiminchikServer is a server that processes a Speech-To-Text engine (Qillqaq), using a model trained by machine learning techniques, it also store and processes audio files collected (Huqariq). The server can be used to connect to apps, websites or others applications.
+Operativa API es un servicio que brinda soporte a las distintas plataforma de la empresa Verificativa.
 
 **Table of Contents**
 
@@ -236,16 +236,11 @@ sudo service supervisor restart
 
 You server has to be ubuntu 16.04 LTS, 16GB RAM, 125GB SSD.
 
-In server.py can change the root where audio files are saving.
-
-
 ## Code documentation
 
-Documentation (incomplete) for the code can be found here: https://docs.google.com/document/d/1nOP5HCoASVtoykoC3LNMzKZEPyz-cU86YubEAo4COxw/edit
 
 ## Contact
 
 We are always happy to hear from you:
 
 * Rodolfo Zevallos rjzevallos.salazar@gmail.com 
-* Luis Camacho camacho.l@pucp.pe
