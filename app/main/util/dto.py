@@ -188,3 +188,19 @@ class Publication_transDto:
 		'id_user': fields.Integer(required=True, description='id_user'),
 		'description': fields.String(required=True, description='description')
     })
+	
+class GenderDto:
+    api = Namespace('gender', description='gender related operations')
+    gender = api.model('gender', {
+		'id': fields.Integer(required=True, description='The id of the state'),
+        'name': fields.String(required=True, description='The name of'),
+		'description': fields.String(required=True, description='The description of the state')
+    })
+	
+class ProviderDto:
+    api = Namespace('provider', description='provider related operations')
+    provider = api.model('provider', {
+		'id': fields.Integer(required=True, description='The id of the state'),
+        'name': fields.String(required=True, description='The name of'),
+		'description': fields.String(required=True, description='The description of the state')
+    })

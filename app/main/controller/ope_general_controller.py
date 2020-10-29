@@ -3,7 +3,7 @@ from flask_restx import Resource
 
 from ..util.dto import AttritionDto, Job_roleDto, DepartmentDto
 from ..util.dto import Job_levelDto, FieldDto, LevelDto
-from ..util.dto import DocumentDto, CivilDto
+from ..util.dto import DocumentDto, CivilDto, GenderDto, ProviderDto
 from ..service.ope_general_service import get_all_attrition
 from ..service.ope_general_service import get_all_job_role
 from ..service.ope_general_service import get_all_department
@@ -12,6 +12,8 @@ from ..service.ope_general_service import get_all_field
 from ..service.ope_general_service import get_all_level
 from ..service.ope_general_service import get_all_document
 from ..service.ope_general_service import get_all_civil
+from ..service.ope_general_service import get_all_provider
+from ..service.ope_general_service import get_all_gender
 
 api_AttritionDto = AttritionDto.api
 _attrition = AttritionDto.attrition
@@ -36,6 +38,12 @@ _document = DocumentDto.document
 
 api_CivilDto = CivilDto.api
 _civil = CivilDto.civil
+
+api_GenderDto = GenderDto.api
+_gender = GenderDto.gender
+
+api_ProviderDto = ProviderDto.api
+_provider = ProviderDto.provider
 
 @api_AttritionDto.route('/')
 class AttritionList(Resource):
@@ -102,3 +110,19 @@ class CivilList(Resource):
     def get(self):
         """List all civil"""
         return get_all_civil()
+		
+@api_GenderDto.route('/')
+class GenderList(Resource):
+    @api_GenderDto.doc('list_of_gender')
+    @api_GenderDto.marshal_list_with(_gender, envelope='data')
+    def get(self):
+        """List all gender"""
+        return get_all_gender()
+		
+@api_ProviderDto.route('/')
+class ProviderList(Resource):
+    @api_ProviderDto.doc('list_of_provider')
+    @api_ProviderDto.marshal_list_with(_provider, envelope='data')
+    def get(self):
+        """List all providers"""
+        return get_all_provider()

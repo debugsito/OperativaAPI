@@ -17,9 +17,12 @@ from .main.controller.ope_general_controller import api_FieldDto
 from .main.controller.ope_general_controller import api_LevelDto
 from .main.controller.ope_general_controller import api_DocumentDto
 from .main.controller.ope_general_controller import api_CivilDto
+from .main.controller.ope_general_controller import api_GenderDto
+from .main.controller.ope_general_controller import api_ProviderDto
 from .main.controller.enterprise_controller import api as ent_ns
 from .main.controller.publication_controller import api as pub_ns
 from .main.controller.publication_trans_controller import api as pub_trans_ns
+
 
 blueprint = Blueprint('api', __name__)
 
@@ -45,6 +48,8 @@ api.add_namespace(api_FieldDto, path='/field')
 api.add_namespace(api_LevelDto, path='/level')
 api.add_namespace(api_DocumentDto, path='/document')
 api.add_namespace(api_CivilDto, path='/civil')
+api.add_namespace(api_GenderDto, path='/gender')
+api.add_namespace(api_ProviderDto, path='/provider')
 api.add_namespace(ent_ns, path='/enterprise')
 api.add_namespace(pub_ns, path='/publication')
 api.add_namespace(pub_trans_ns, path='/publication_trans')

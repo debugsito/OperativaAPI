@@ -10,6 +10,8 @@ from app.main.model.department import Department
 from app.main.model.job_level import Job_level
 from app.main.model.job_role import Job_role
 from app.main.model.attrition import Attrition
+from app.main.model.gender import Gender
+from app.main.model.provider import Provider
 
 def get_all_document():
     return Document.query.all()
@@ -34,3 +36,9 @@ def get_all_job_role():
 
 def get_all_attrition():
 	return Attrition.query.all()
+	
+def get_all_gender():
+	return Gender.query.all()
+
+def get_all_provider():
+	return Provider.query.all()
