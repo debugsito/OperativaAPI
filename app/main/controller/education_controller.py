@@ -1,7 +1,7 @@
 from flask import request
 from flask_restx import Resource
 
-from app.main.util.decorator import admin_token_required
+from app.main.util.decorator import token_required
 from ..util.dto import EducationDto
 from ..service.education_service import save_new_education, get_all_education, get_a_education
 
@@ -20,6 +20,7 @@ class EducationList(Resource):
     @api.expect(_education, validate=True)
     @api.response(201, 'Education successfully created.')
     @api.doc('create a new education')
+    @token_required
     def post(self):
         """Creates a new Education """
         data = request.json

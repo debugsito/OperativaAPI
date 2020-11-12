@@ -13,7 +13,7 @@ class Auth:
         try:
             # fetch the Account data
             account = Account.query.filter_by(email=data.get('email')).first()
-            if account.password_hash == data.get('password'):
+            if account and account.password_hash == data.get('password'):
                 auth_token = Account.encode_auth_token(account.id)
                 if auth_token:
                     response_object = {

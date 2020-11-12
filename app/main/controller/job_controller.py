@@ -1,7 +1,7 @@
 from flask import request
 from flask_restx import Resource
 
-from app.main.util.decorator import admin_token_required
+from app.main.util.decorator import token_required
 from ..util.dto import JobDto
 from ..service.job_service import save_new_job, get_all_job, get_a_job
 
@@ -20,6 +20,7 @@ class JobList(Resource):
     @api.expect(_job, validate=True)
     @api.response(201, 'Job successfully created.')
     @api.doc('create a new job')
+    @token_required
     def post(self):
         """Creates a new Job """
         data = request.json

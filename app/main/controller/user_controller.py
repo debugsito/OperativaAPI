@@ -2,6 +2,7 @@ from flask import request
 from flask_restx import Resource
 
 from app.main.util.decorator import admin_token_required
+from app.main.util.decorator import token_required
 from ..util.dto import UserDto
 from ..service.user_service import save_new_user, get_all_users, get_a_user
 
@@ -20,6 +21,7 @@ class UserList(Resource):
     @api.expect(_user, validate=True)
     @api.response(201, 'User successfully created.')
     @api.doc('create a new user')
+    @token_required
     def post(self):
         """Creates a new User """
         data = request.json

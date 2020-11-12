@@ -43,6 +43,7 @@ def generate_token(account):
         response_object = {
             'status': 'success',
             'message': 'Successfully registered.',
+            'account_id': account.id,
             'Authorization': auth_token.decode()
         }
         return response_object, 201
