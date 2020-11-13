@@ -25,7 +25,7 @@ manager.add_command('db', MigrateCommand)
 @manager.command
 def run():
 	app.run(host='0.0.0.0',port=8080)
-    #app.run(host='0.0.0.0',port=8080, ssl_context=('/etc/letsencrypt/live/www.operativaapi.tk/fullchain.pem','/etc/letsencrypt/live/www.operativaapi.tk/privkey.pem'))
+    # app.run(host='0.0.0.0',port=8080, ssl_context=('/etc/letsencrypt/live/dev.api.operativa.startapps.com.pe/fullchain.pem','/etc/letsencrypt/live/dev.api.operativa.startapps.com.pe/privkey.pem'))
 
 
 @manager.command
