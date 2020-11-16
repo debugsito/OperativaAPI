@@ -17,7 +17,7 @@ class JobList(Resource):
         """List all registered jobs"""
         return get_all_job()
 
-    @api.expect(_job, validate=True)
+    # @api.expect(_job, validate=True)
     @api.response(201, 'Job successfully created.')
     @api.doc('create a new job')
     @token_required
